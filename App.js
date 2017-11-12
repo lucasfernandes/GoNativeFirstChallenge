@@ -44,7 +44,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Header />
         <ScrollView showsVerticalScrollIndicator={false}>
-          { posts.map(post => <Post key={post.id} post={post} />) }
+          { posts.map((post, index) => <Post key={post.id} post={post} index={index} />) }
         </ScrollView>
       </View>
     );

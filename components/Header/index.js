@@ -5,7 +5,7 @@ import { View, Text } from 'react-native';
 import styles from './styles';
 
 const Header = () => (
-  <View style={[styles.container, styles.shadow]}>
+  <View style={styles.container}>
     <Text style={styles.title}>GoNative App</Text>
   </View>
 );

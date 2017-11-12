@@ -7,12 +7,15 @@ export default StyleSheet.create({
     alignItems: 'flex-start',
     backgroundColor: '#FFF',
     padding: 20,
-    marginTop: 20,
+    marginBottom: 20,
     marginHorizontal: 20,
     borderRadius: 5,
+    shadowColor: '#DA6C6C',
+    shadowRadius: 5,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
   },
   text: {
-    fontFamily: 'Helvetica',
     fontSize: 12,
   },
   title: {
@@ -34,10 +37,10 @@ export default StyleSheet.create({
     color: '#666',
     lineHeight: 19,
   },
-  shadow: {
-    shadowColor: '#DA6C6C',
-    shadowRadius: 5,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 1,
+  firstPostDefault: {
+    marginTop: 0,
+  },
+  firstPost: {
+    marginTop: 20,
   },
 });

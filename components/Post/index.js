@@ -8,8 +8,8 @@ import PropTypes from 'prop-types';
 // Styles
 import styles from './styles';
 
-const Post = ({ post }) => (
-  <View style={[styles.container, styles.shadow]}>
+const Post = ({ post, index }) => (
+  <View style={[styles.container, index === 0 ? styles.firstPost : styles.irstPostDefault]}>
     <Text style={[styles.text, styles.title]}>{post.title}</Text>
     <Text style={[styles.text, styles.author]}>{post.author}</Text>
     <View style={styles.textContainer}>
@@ -24,6 +24,7 @@ Post.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
   }).isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default Post;
