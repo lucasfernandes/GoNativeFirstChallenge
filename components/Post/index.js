@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import styles from './styles';
 
 const Post = ({ post, index }) => (
-  <View style={[styles.container, index === 0 ? styles.firstPost : styles.irstPostDefault]}>
+  <View style={[styles.container, index === 0 ? styles.firstPost : styles.firstPostDefault]}>
     <Text style={[styles.text, styles.title]}>{post.title}</Text>
     <Text style={[styles.text, styles.author]}>{post.author}</Text>
     <View style={styles.textContainer}>
